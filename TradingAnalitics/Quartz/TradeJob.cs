@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Quartz;
 using Quartz.Impl;
+using Serilog;
 using Tinkoff.Trading.OpenApi.Models;
 using Tinkoff.Trading.OpenApi.Network;
 
@@ -17,12 +19,20 @@ namespace TradingAnalitics.Quartz
 
         public async Task Execute(IJobExecutionContext context)
         {
-            Console.WriteLine($"{DateTime.Now} execute begin");
-
             SandboxConnection connection = ConnectionFactory.GetSandboxConnection(token);
             SandboxContext ctx = connection.Context;
 
-            var v0 = await ctx.MarketCandlesAsync("BBG0113JGQF0", DateTime.Now.AddDays(-3), DateTime.Now.AddDays(-2), Tinkoff.Trading.OpenApi.Models.CandleInterval.Day);
+            var instrumentList = await ctx.MarketStocksAsync();
+            var nvda = instrumentList.Instruments.FirstOrDefault(e => e.Ticker.Contains("NVDA"));
+
+
+            Calendar cal = CultureInfo.InvariantCulture.Calendar;
+            int previousWeekNumb =cal.GetWeekOfYear(DateTime.Now, CalendarWeekRule.FirstFullWeek, DayOfWeek.Monday) - 1;
+            var previousWeekMondayDate = DateHelper.GetFirstDateOfWeek(DateTime.Now.Year, previousWeekNumb, CultureInfo.CurrentCulture);
+            var previousWeekSuturdayDate = previousWeekMondayDate.AddDays(5);
+
+
+            var v0 = await ctx.MarketCandlesAsync(nvda.Figi, previousWeekMondayDate, previousWeekSuturdayDate, Tinkoff.Trading.OpenApi.Models.CandleInterval.Week);
             /*var acc = ctx.AccountsAsync();
             var pos = ctx.PortfolioAsync("SB1171823");
             MarketInstrumentList instrumentList = ctx.MarketStocksAsync();
@@ -30,13 +40,11 @@ namespace TradingAnalitics.Quartz
             MarketOrder order = new MarketOrder("BBG000B9XRY4", 1, OperationType.Buy, "SB1171823");
             var v = ctx.PlaceMarketOrderAsync(order);
             var pos2 = ctx.PortfolioAsync("SB1171823");*/
-            //Console.WriteLine($"{v0.Candles[0].High}");
 
-            Console.WriteLine($"{v0.Candles[0].High}");
+            Log.Logger.Information($"{v0.Candles[0].High}, {v0.Candles[0].Low}, {v0.Candles[0].Open}, {v0.Candles[0].Close}");
 
             await Task.CompletedTask;
             
         }
-
     }
 }

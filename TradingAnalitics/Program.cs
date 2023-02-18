@@ -32,7 +32,7 @@ namespace TradingAnalitics
 
              var pos2 = await context.PortfolioAsync("SB1171823");
              */
-
+            var logPath = @"C:\Log Files\Trd.txt";
 
             var rc = HostFactory.Run(x =>
             {
@@ -47,7 +47,7 @@ namespace TradingAnalitics
                 Log.Logger = new LoggerConfiguration()
                     .MinimumLevel.Information()
                     .WriteTo.Console()
-                    //.WriteTo.File($"{Path.GetTempPath()}logs\\Trd.txt", rollingInterval: RollingInterval.Day)
+                    .WriteTo.File(logPath, rollingInterval: RollingInterval.Day)
                     .CreateLogger();
                 x.UseSerilog(Log.Logger);
 

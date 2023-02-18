@@ -415,6 +415,18 @@
           "lib/net45/Serilog.Sinks.Console.dll": {}
         }
       },
+      "Serilog.Sinks.File/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.10.0"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1217,6 +1229,18 @@
           "lib/net45/Serilog.Sinks.Console.dll": {}
         }
       },
+      "Serilog.Sinks.File/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.10.0"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1959,6 +1983,18 @@
           "lib/net45/Serilog.Sinks.Console.dll": {}
         }
       },
+      "Serilog.Sinks.File/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.10.0"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -2699,6 +2735,18 @@
         },
         "runtime": {
           "lib/net45/Serilog.Sinks.Console.dll": {}
+        }
+      },
+      "Serilog.Sinks.File/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.10.0"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -3611,6 +3659,33 @@
         "lib/netstandard2.0/Serilog.Sinks.Console.xml",
         "serilog.sinks.console.4.1.0.nupkg.sha512",
         "serilog.sinks.console.nuspec"
+      ]
+    },
+    "Serilog.Sinks.File/5.0.0": {
+      "sha512": "uwV5hdhWPwUH1szhO8PJpFiahqXmzPzJT/sOijH/kFgUx+cyoDTMM8MHD0adw9+Iem6itoibbUXHYslzXsLEAg==",
+      "type": "package",
+      "path": "serilog.sinks.file/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net45/Serilog.Sinks.File.dll",
+        "lib/net45/Serilog.Sinks.File.pdb",
+        "lib/net45/Serilog.Sinks.File.xml",
+        "lib/net5.0/Serilog.Sinks.File.dll",
+        "lib/net5.0/Serilog.Sinks.File.pdb",
+        "lib/net5.0/Serilog.Sinks.File.xml",
+        "lib/netstandard1.3/Serilog.Sinks.File.dll",
+        "lib/netstandard1.3/Serilog.Sinks.File.pdb",
+        "lib/netstandard1.3/Serilog.Sinks.File.xml",
+        "lib/netstandard2.0/Serilog.Sinks.File.dll",
+        "lib/netstandard2.0/Serilog.Sinks.File.pdb",
+        "lib/netstandard2.0/Serilog.Sinks.File.xml",
+        "lib/netstandard2.1/Serilog.Sinks.File.dll",
+        "lib/netstandard2.1/Serilog.Sinks.File.pdb",
+        "lib/netstandard2.1/Serilog.Sinks.File.xml",
+        "serilog.sinks.file.5.0.0.nupkg.sha512",
+        "serilog.sinks.file.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -4597,6 +4672,7 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Quartz >= 3.5.0",
       "Serilog.Sinks.Console >= 4.1.0",
+      "Serilog.Sinks.File >= 5.0.0",
       "System.Diagnostics.DiagnosticSource >= 4.7.1",
       "System.Net.Http >= 4.3.1",
       "System.Text.Encodings.Web >= 7.0.0",
@@ -4611,11 +4687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stunner\\source\\repos\\Forecast_202301152\\Forecast_20230115\\Forecast\\TradingAnalitics\\TradingAnalitics.csproj",
+      "projectUniqueName": "C:\\Users\\Stunner\\source\\repos\\Forecast\\TradingAnalitics\\TradingAnalitics.csproj",
       "projectName": "TradingAnalitics",
-      "projectPath": "C:\\Users\\Stunner\\source\\repos\\Forecast_202301152\\Forecast_20230115\\Forecast\\TradingAnalitics\\TradingAnalitics.csproj",
+      "projectPath": "C:\\Users\\Stunner\\source\\repos\\Forecast\\TradingAnalitics\\TradingAnalitics.csproj",
       "packagesPath": "C:\\Users\\Stunner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stunner\\source\\repos\\Forecast_202301152\\Forecast_20230115\\Forecast\\TradingAnalitics\\obj\\",
+      "outputPath": "C:\\Users\\Stunner\\source\\repos\\Forecast\\TradingAnalitics\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -4667,6 +4743,10 @@
           "Serilog.Sinks.Console": {
             "target": "Package",
             "version": "[4.1.0, )"
+          },
+          "Serilog.Sinks.File": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           },
           "System.Diagnostics.DiagnosticSource": {
             "target": "Package",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2xJBOMEfL2Sgq1IiFGqUQSuMdFfwvSMeUhIu2OdepmN7e/5k0L/yCcNNrR7P6tK+mIEnssmnpwIStmfIksBJGw==",
+  "dgSpecHash": "Dssw222DQ+sWU21a+/PaCQ6aZhDSVe6iSGoYtUOAMg7tFCDcjTYUCCkZL1ZYwXjPggo6bZQ7bP8p6YssyETJXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stunner\\source\\repos\\Forecast_202301152\\Forecast_20230115\\Forecast\\TradingAnalitics\\TradingAnalitics.csproj",
+  "projectFilePath": "C:\\Users\\Stunner\\source\\repos\\Forecast\\TradingAnalitics\\TradingAnalitics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stunner\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\Stunner\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.32\\microsoft.extensions.configuration.3.1.32.nupkg.sha512",
@@ -33,6 +33,7 @@
     "C:\\Users\\Stunner\\.nuget\\packages\\quartz\\3.5.0\\quartz.3.5.0.nupkg.sha512",
     "C:\\Users\\Stunner\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\Stunner\\.nuget\\packages\\serilog.sinks.console\\4.1.0\\serilog.sinks.console.4.1.0.nupkg.sha512",
+    "C:\\Users\\Stunner\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\Stunner\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Stunner\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\Stunner\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
