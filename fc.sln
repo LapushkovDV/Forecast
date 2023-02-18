@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29926.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fc", "fc\fc.csproj", "{3554700A-92FA-4E36-A166-B63D2EEB94D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingAnalitics", "TradingAnalitics\TradingAnalitics.csproj", "{B5C0B16F-295B-40CC-85F3-186B59C5F150}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3554700A-92FA-4E36-A166-B63D2EEB94D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3554700A-92FA-4E36-A166-B63D2EEB94D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3554700A-92FA-4E36-A166-B63D2EEB94D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5C0B16F-295B-40CC-85F3-186B59C5F150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C0B16F-295B-40CC-85F3-186B59C5F150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C0B16F-295B-40CC-85F3-186B59C5F150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C0B16F-295B-40CC-85F3-186B59C5F150}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

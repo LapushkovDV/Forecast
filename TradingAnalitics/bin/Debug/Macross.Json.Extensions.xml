@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Macross.Json.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:System.Net.Http.PushStreamContent">
+            <summary>
+            Provides an <see cref="T:System.Net.Http.HttpContent"/> implementation that exposes an output <see cref="T:System.IO.Stream"/>
+            which can be written to directly. The ability to push data to the output stream differs from the
+            <see cref="T:System.Net.Http.StreamContent"/> where data is pulled and not pushed.
+            </summary>
+        </member>
+        <member name="M:System.Net.Http.PushStreamContent.#ctor(System.Func{System.IO.Stream,System.Threading.Tasks.Task})">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Net.Http.PushStreamContent"/> class.
+            </summary>
+            <param name="onStreamAvailable">Callback function to write to the stream once it is available.</param>
+        </member>
+        <member name="M:System.Net.Http.PushStreamContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Net.Http.PushStreamContent.TryComputeLength(System.Int64@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:System.Text.Json.Serialization.JsonDelegatedStringConverter`1">
+            <summary>
+            A <see cref="T:System.Text.Json.Serialization.JsonConverter`1"/> that uses conversion functions to transpose types to and from JSON strings.
+            </summary>
+            <typeparam name="T">The type being converted.</typeparam>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonDelegatedStringConverter`1.#ctor(System.Func{System.String,`0},System.Func{`0,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Text.Json.Serialization.JsonDelegatedStringConverter`1"/> class.
+            </summary>
+            <param name="convertValueFromStringFunc">A function for converting <typeparamref name="T"/> values into strings.</param>
+            <param name="convertValueToStringFunc">A function for converting strings into <typeparamref name="T"/> values.</param>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonDelegatedStringConverter`1.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonDelegatedStringConverter`1.Write(System.Text.Json.Utf8JsonWriter,`0,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="T:System.Text.Json.Serialization.JsonIPAddressConverter">
+            <summary>
+            <see cref="T:System.Text.Json.Serialization.JsonConverterFactory"/> to convert <see cref="T:System.Net.IPAddress"/> to and from strings.
+            </summary>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonIPAddressConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonIPAddressConverter.Write(System.Text.Json.Utf8JsonWriter,System.Net.IPAddress,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="T:System.Text.Json.Serialization.JsonIPEndPointConverter">
+            <summary>
+            <see cref="T:System.Text.Json.Serialization.JsonConverterFactory"/> to convert <see cref="T:System.Net.IPEndPoint"/> to and from strings.
+            </summary>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonIPEndPointConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonIPEndPointConverter.Write(System.Text.Json.Utf8JsonWriter,System.Net.IPEndPoint,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="T:System.Text.Json.Serialization.JsonMicrosoftDateTimeConverter">
+            <summary>
+            <see cref="T:System.Text.Json.Serialization.JsonConverterFactory"/> to convert <see cref="T:System.DateTime"/> to and from strings in the Microsoft "\/Date()\/" format. Supports <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <remarks>Adapted from code posted on: <a href="https://github.com/dotnet/runtime/issues/30776">dotnet/runtime #30776</a>.</remarks>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeConverter.CanConvert(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeConverter.CreateConverter(System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeConverter.JsonStandardDateTimeConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeConverter.JsonStandardDateTimeConverter.Write(System.Text.Json.Utf8JsonWriter,System.DateTime,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeConverter.JsonNullableDateTimeConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeConverter.JsonNullableDateTimeConverter.Write(System.Text.Json.Utf8JsonWriter,System.Nullable{System.DateTime},System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="T:System.Text.Json.Serialization.JsonMicrosoftDateTimeOffsetConverter">
+            <summary>
+            <see cref="T:System.Text.Json.Serialization.JsonConverterFactory"/> to convert <see cref="T:System.DateTimeOffset"/> to and from strings in the Microsoft "\/Date()\/" format. Supports <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <remarks>Adapted from code posted on: <a href="https://github.com/dotnet/runtime/issues/30776">dotnet/runtime #30776</a>.</remarks>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeOffsetConverter.CanConvert(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeOffsetConverter.CreateConverter(System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeOffsetConverter.JsonStandardDateTimeOffsetConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeOffsetConverter.JsonStandardDateTimeOffsetConverter.Write(System.Text.Json.Utf8JsonWriter,System.DateTimeOffset,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeOffsetConverter.JsonNullableDateTimeOffsetConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonMicrosoftDateTimeOffsetConverter.JsonNullableDateTimeOffsetConverter.Write(System.Text.Json.Utf8JsonWriter,System.Nullable{System.DateTimeOffset},System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="T:System.Text.Json.Serialization.JsonStringEnumMemberConverter">
+            <summary>
+            <see cref="T:System.Text.Json.Serialization.JsonConverterFactory"/> to convert enums to and from strings, respecting <see cref="T:System.Runtime.Serialization.EnumMemberAttribute"/> decorations. Supports nullable enums.
+            </summary>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonStringEnumMemberConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Text.Json.Serialization.JsonStringEnumMemberConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonStringEnumMemberConverter.#ctor(System.Text.Json.JsonNamingPolicy,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Text.Json.Serialization.JsonStringEnumMemberConverter"/> class.
+            </summary>
+            <param name="namingPolicy">
+            Optional naming policy for writing enum values.
+            </param>
+            <param name="allowIntegerValues">
+            True to allow undefined enum values. When true, if an enum value isn't
+            defined it will output as a number rather than a string.
+            </param>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonStringEnumMemberConverter.CanConvert(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonStringEnumMemberConverter.CreateConverter(System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="T:System.Text.Json.Serialization.JsonTimeSpanConverter">
+            <summary>
+            <see cref="T:System.Text.Json.Serialization.JsonConverterFactory"/> to convert <see cref="T:System.TimeSpan"/> to and from strings. Supports <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <remarks>
+            TimeSpans are transposed using the constant ("c") format specifier: [-][d.]hh:mm:ss[.fffffff].
+            </remarks>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonTimeSpanConverter.CanConvert(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonTimeSpanConverter.CreateConverter(System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonTimeSpanConverter.JsonStandardTimeSpanConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonTimeSpanConverter.JsonStandardTimeSpanConverter.Write(System.Text.Json.Utf8JsonWriter,System.TimeSpan,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonTimeSpanConverter.JsonNullableTimeSpanConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Text.Json.Serialization.JsonTimeSpanConverter.JsonNullableTimeSpanConverter.Write(System.Text.Json.Utf8JsonWriter,System.Nullable{System.TimeSpan},System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Macross.Json.Extensions.ThrowHelper.GenerateJsonException_DeserializeUnableToConvertValue(System.Type)">
+            <summary>
+            Generate a <see cref="T:System.Text.Json.JsonException"/> using the internal
+            <c>JsonException.AppendPathInformation</c> property that will
+            eventually include the JSON path, line number, and byte position in
+            line.
+            <para>
+            The final message of the exception looks like: The JSON value could
+            not be converted to {0}. Path: $.{JSONPath} | LineNumber:
+            {LineNumber} | BytePositionInLine: {BytePositionInLine}.
+            </para>
+            </summary>
+            <param name="propertyType">Property type.</param>
+            <returns><see cref="T:System.Text.Json.JsonException"/>.</returns>
+        </member>
+        <member name="M:Macross.Json.Extensions.ThrowHelper.GenerateJsonException_DeserializeUnableToConvertValue(System.Type,System.String,System.Exception)">
+            <summary>
+            Generate a <see cref="T:System.Text.Json.JsonException"/> using the internal
+            <c>JsonException.AppendPathInformation</c> property that will
+            eventually include the JSON path, line number, and byte position in
+            line.
+            <para>
+            The final message of the exception looks like: The JSON value '{1}'
+            could not be converted to {0}. Path: $.{JSONPath} | LineNumber:
+            {LineNumber} | BytePositionInLine: {BytePositionInLine}.
+            </para>
+            </summary>
+            <param name="propertyType">Property type.</param>
+            <param name="propertyValue">Value that could not be parsed into
+            property type.</param>
+            <param name="innerException">Optional inner <see cref="T:System.Exception"/>.</param>
+            <returns><see cref="T:System.Text.Json.JsonException"/>.</returns>
+        </member>
+    </members>
+</doc>
