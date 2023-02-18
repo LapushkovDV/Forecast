@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using fc;
 using Serilog;
 using Topshelf;
 
@@ -59,7 +60,5 @@ namespace TradingAnalitics
             var exitCode = (int)Convert.ChangeType(rc, rc.GetTypeCode());
             Environment.ExitCode = exitCode;
         }
-
-        
     }
 }

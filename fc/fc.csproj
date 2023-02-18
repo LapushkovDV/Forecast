@@ -165,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connections\MyDbContext.cs" />
+    <Compile Include="Objects\Order.cs" />
     <Compile Include="Objects\TrialPurchase.cs" />
     <Compile Include="Objects\Forecast.cs" />
     <Compile Include="Objects\Instrument.cs" />

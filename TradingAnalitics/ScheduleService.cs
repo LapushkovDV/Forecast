@@ -44,7 +44,7 @@ namespace TradingAnalitics
                 .WithIdentity("trigger1", "group1")
                 .StartNow()
                 .WithSimpleSchedule(x => x
-                    .WithIntervalInSeconds(2)
+                    .WithIntervalInSeconds(22)
                     .RepeatForever())
                 .Build();
 

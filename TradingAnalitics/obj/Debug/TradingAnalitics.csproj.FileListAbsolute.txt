@@ -268,7 +268,6 @@ C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Microsoft.Exte
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Tinkoff.InvestApi.dll
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Tinkoff.Trading.OpenApi.dll
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\EntityFramework.dll
-C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Google.Protobuf.pdb
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Google.Protobuf.xml
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Grpc.Core.Api.pdb
@@ -281,7 +280,6 @@ C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Grpc.Net.Commo
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Grpc.Net.Common.xml
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Macross.Json.Extensions.xml
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Microsoft.Extensions.Http.xml
-C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\EntityFramework.xml
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\obj\Debug\TradingAnalitics.csproj.AssemblyReference.cache
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\obj\Debug\TradingAnalitics.csproj.SuggestedBindingRedirects.cache
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\obj\Debug\TradingAnalitics.exe.config
@@ -291,3 +289,8 @@ C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\obj\Debug\TradingAnaliti
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\obj\Debug\TradingAnalitics.pdb
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Serilog.Sinks.File.dll
 C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\fc.exe
+C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\fc.pdb
+C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\fc.exe.config
+C:\Users\Stunner\source\repos\Forecast\TradingAnalitics\bin\Debug\Newtonsoft.Json.xml

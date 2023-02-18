@@ -1,4 +1,5 @@
-﻿using System;
+﻿using fc.Objects;
+using System;
 using System.Data.Entity;
 
 namespace fc
@@ -15,8 +16,8 @@ namespace fc
 
         public DbSet<TrialPurchase> TrialPurchases { get; set; }
 
-       // public DbSet<TrialDailyPrice> TrialDailyPrices { get; set; }
-        
-    
+        // public DbSet<TrialDailyPrice> TrialDailyPrices { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
     }
 }
